@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<style>
+.demo{
+    width: 500px;
+    height: 300px;
+    border: 1px solid black;
+    margin: 50px auto;
+}
+.wrapper{   
+    width:300px;
+    height:200px;
+    border: 1px solid black;
+    margin: 200px auto
+}
+
+</style>
+<body>
+    <div class="demo"></div>
+
+    <div class="wrapper"></div>
+
+
+
+    <script src="jquery-3.3.1.js"></script>
+    <script src="lb.js"></script>
+    <script>
+    //创建轮播图对象 
+    //创建轮播图结构
+    //初始化轮播图样式
+    //绑定轮播图内事件
+
+    // 扩展slider()这个方法 多个轮播图相互独立可以利用构造函数，返回一个对象， 各自下有哪些不同？  
+
+    $('.demo').Slider({
+        imgList:['./image/pic1.jpg','./image/pic2.jpg','./image/pic3.jpg',],
+        width:500,
+        height:300,
+        animateType:'animate',  
+        isAuto:true,
+        direction:'right'
+    })
+    $('.wrapper').Slider({
+        imgList:['./image/pic1.jpg','./image/pic2.jpg','./image/pic3.jpg',],
+        width:300,
+        height:200,
+        animateType:'fade',  
+        isAuto:true,
+        direction:'right'
+    })
+    
+    
+    
+    
+    </script>
+</body>
+</html>
